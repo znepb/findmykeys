@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello World!",
+    "description": "My first blog post.",
+    "date": "2024-10-23",
+    "content": "Welcome to my blog! This is my first post.",
+    "attachments": []
+  },
+  {
+    "slug": "capturing-flags",
+    "title": "Capturing flags",
+    "description": "Flags are fun and difficult to find sometimes...",
+    "date": "2024-11-30",
+    "content": "Uh oh... I lost my keys! Maybe someone will help me find them?",
+    "attachments": []
+  },
+  {
+    "slug": "kitty-cats",
+    "title": "Kitty cats!",
+    "description": "All about my cats.",
+    "date": "2025-01-13",
+    "content": "I love my cats! I have four - Mickey, Minnie, Tom, and Jerry. Of course named after cartoon characters! Check out the attachments on this post. It's a new feature I'm trying out, you can see two of my kitties on them!",
+    "attachments": [
+      {
+        "file": "cat1.jpg",
+        "attribution": "Basile Morin, CC BY-SA 4.0, via Wikimedia Commons"
+      },
+      {
+        "file": "cat2.jpg",
+        "attribution": "Paul Danese, CC BY-SA 4.0, via Wikimedia Commons"
+      }
+    ]
+  }
+]

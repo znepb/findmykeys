@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <title>My Blog</title>
+  </head>
+  <body>
+    <main>
+      <%- include('partials/header.ejs') %>
+      <h1><%= post.title %></h1>
+      <p>Posted on <%= new Date(post.date).toLocaleDateString() %></p>
+      <div class="post-content">
+        <p><%= post.content %></p>
+      </div>
+      <div class="post-attachments">
+        <% if (post.attachments && post.attachments.length > 0) { %>
+        <h2>Attachments</h2>
+        <ul>
+          <% post.attachments.forEach(function(attachment) { %>
+          <li>
+            <a
+              href="/attachments?post=<%= post.slug %>&file=<%= attachment.file %>"
+              download
+              ><%= attachment.file %></a
+            ><sup title="<%= attachment.attribution %>">attr</sup>
+          </li>
+          <% }); %>
+        </ul>
+        <% } else { %>
+        <p>No attachments available.</p>
+        <% } %>
+      </div>
+      <%- include('partials/footer.ejs') %>
+    </main>
+  </body>
+</html>
